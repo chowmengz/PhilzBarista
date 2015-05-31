@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/white"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageViewUser"
+            android:layout_above="@+id/OrderDeatil"
+            android:background="@drawable/yang"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/customerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:layout_marginTop="10dp"
+            android:text="Your customer is"/>
+
+        <TextView
+            android:id="@+id/customerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20pt"
+            android:visibility="invisible"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/baristaText"
+            android:gravity="center"/>
+
+        <TextView android:text="@string/notes" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:id="@+id/OrderDeatil" />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Finish Order"
+        android:id="@+id/finishOrderButton"
+        android:visibility="invisible"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
